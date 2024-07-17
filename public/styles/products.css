@@ -1,0 +1,116 @@
+/*products.css*/
+body {
+    color: aliceblue;
+}
+
+#products, #farmers{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#products h2, #farmers h2 {
+    font-size: 36px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filters select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.product-list, .farmer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    column-gap: 60px;
+    justify-items: center;
+}
+
+.product-item, .farmer-item {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product-item button {
+    width: 50%;
+    padding: 5px;
+    border: none;
+    background-color: yellow;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.product-item button:hover {
+    cursor: pointer;
+}
+
+.product-item img,  .farmer-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3,.farmer-item h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.farmer-item p:last-child {
+    margin-top: 10px;
+  }
+  
+  .farmer-item a {
+    color: #bab9b9;
+    text-decoration: none;
+  }
+  
+  .farmer-item a:hover {
+    text-decoration: underline;
+  }
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 0 1 calc(50% - 20px); /* 2 products per row on tablets */
+    }
+
+    .farmer-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 farmers per row on tablets */
+      }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 0 1 calc(100% - 20px); /* 1 product per row on mobile */
+        margin: 10px 0;
+    }
+
+    .farmer-container {
+        grid-template-columns: 1fr; /* 1 farmer per row on mobile */
+      }
+}

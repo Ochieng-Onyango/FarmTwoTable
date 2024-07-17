@@ -1,0 +1,81 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./images/Farm2Table.png">
+    <link rel="stylesheet" href="./styles/general.css">
+</head>
+<body>
+    <nav>
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><img src="./images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li>
+                <a href="orders.html" id="cart">
+                    <img src="./images/cart-icon.png" alt="">
+                    <span class="cart-count"></span>
+                </a>
+            </li>
+            <li> <a href="login.html">Login</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="home.html" id="logo"><img src="./images/Farm2Table.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="products.html">Products</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="orders.html">Orders</a></li>
+            <li class="hideOnMobile">
+                <a href="orders.html" id="cart">
+                    <img src="./images/cart-icon.png" alt="">
+                    <span class="cart-count"></span>
+                </a>
+            </li>
+            <li class="hideOnMobile"> <a href="login.html">Login</a></li>
+            <li onclick="showSidebar()" class="menu-btn"><a href="#"><img src="./images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+        </ul>
+       
+    </nav>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Our Roots Run Deep!</h2>
+                <p>At Farm2Table, we're more than just a marketplace. We're a family of dedicated poultry farmers, food lovers, and dreamers. Our journey began with a flock of hens and a vision: to nourish our community with wholesome, locally raised poultry.</p>
+                <p>From our sunlit barns to your table, we cultivate trust, one egg and one bird at a time. Join us in celebrating the rich flavors of tradition, the joy of community connection, and the promise of sustainable farming.</p>
+            </div>
+            <div class="meet-farmers">
+                <button>Meet Our Farmers</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farm2Table. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+</body>
+</html>

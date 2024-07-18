@@ -1,6 +1,5 @@
 /* orders.css */
 main {
-    height: 100vh;
     color: aliceblue;
 }
 
@@ -21,7 +20,7 @@ main {
     align-items: center;
     padding: 20px;
     border: 1px solid #ddd;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

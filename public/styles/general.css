@@ -89,6 +89,14 @@ nav a:hover{
 
 @media (max-width: 800px){
     body{
+        width: 100%;
+        background-image: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    body{
+        width: 100%;
         background-image: 100%;
     }
 }

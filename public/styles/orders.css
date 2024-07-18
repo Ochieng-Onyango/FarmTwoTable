@@ -1,4 +1,8 @@
 /* orders.css */
+html {
+    min-height: 100%;
+
+}
 main {
     color: aliceblue;
 }

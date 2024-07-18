@@ -3,12 +3,19 @@
     padding: 0;
 }
 
+html {
+    min-height: 100%;
+
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    height: 100hv;
+    min-height: 100%;
     background-image: linear-gradient(rgba(0,0,0, 0.8), #3551b2),url(../images/chicken.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -186,8 +193,8 @@ footer {
     background-color: rgba(153, 151, 151, 0.5);
     color: #fff;
     text-align: center;
-    position: relative;
-    margin-bottom: 0;
+    /* position: relative; */
+    margin-top: auto;
     width: 100%;
     box-shadow: 2px 0 0 0 rgba(0,0,0,0.5);
 }
